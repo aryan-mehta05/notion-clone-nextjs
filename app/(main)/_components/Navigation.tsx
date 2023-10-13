@@ -29,7 +29,7 @@ import { Item } from "./item";
 // import { Navbar } from "./navbar";
 // import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
-// import { DocumentList } from "./document-list";
+import { DocumentList } from "./document-list";
 
 export const Navigation = () => {
   const router = useRouter();
@@ -172,7 +172,7 @@ export const Navigation = () => {
           />
         </div>
         <div className="mt-4">
-          {/* <DocumentList /> */}
+          <DocumentList />
           {/* <Item
             onClick={handleCreate}
             icon={Plus}
