@@ -154,17 +154,17 @@ export const Navigation = () => {
         </div>
         <div>
           <UserItem />
-          {/* <Item
+          <Item
             label="Search"
             icon={Search}
             isSearch
-            onClick={search.onOpen}
+            onClick={() => {}}
           />
           <Item
             label="Settings"
             icon={Settings}
-            onClick={settings.onOpen}
-          /> */}
+            onClick={() => {}}
+          />
           <Item
             onClick={handleCreate}
             label="New page"
