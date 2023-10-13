@@ -28,7 +28,7 @@ import { cn } from "@/lib/utils";
 // import { Item } from "./item";
 // import { Navbar } from "./navbar";
 // import { TrashBox } from "./trash-box";
-// import { UserItem } from "./user-item";
+import { UserItem } from "./user-item";
 // import { DocumentList } from "./document-list";
 
 export const Navigation = () => {
@@ -153,7 +153,7 @@ export const Navigation = () => {
           <ChevronsLeft className="h-6 w-6" />
         </div>
         <div>
-          {/* <UserItem /> */}
+          <UserItem />
           {/* <Item
             label="Search"
             icon={Search}
