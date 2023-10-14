@@ -27,7 +27,7 @@ import {
 
 import { Item } from "./item";
 // import { Navbar } from "./navbar";
-// import { TrashBox } from "./trash-box";
+import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
 import { DocumentList } from "./document-list";
 
@@ -186,8 +186,7 @@ export const Navigation = () => {
               className="p-0 w-72"
               side={isMobile ? "bottom" : "right"}
             >
-              <p>Trash Box</p>
-              {/* <TrashBox /> */}
+              <TrashBox />
             </PopoverContent>
           </Popover>
         </div>
