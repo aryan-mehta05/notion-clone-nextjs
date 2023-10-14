@@ -26,7 +26,7 @@ import { useSearch } from "@/hooks/use-search";
 import { useSettings } from "@/hooks/use-settings";
 
 import { Item } from "./item";
-// import { Navbar } from "./navbar";
+import { Navbar } from "./navbar";
 import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
 import { DocumentList } from "./document-list";
@@ -35,7 +35,7 @@ export const Navigation = () => {
   const router = useRouter();
   const settings = useSettings();
   const search = useSearch();
-  // const params = useParams();
+  const params = useParams();
   const pathname = usePathname();
   const isMobile = useMediaQuery("(max-width: 768px)");
   const create = useMutation(api.documents.create);
@@ -204,7 +204,7 @@ export const Navigation = () => {
           isMobile && "left-0 w-full"
         )}
       >
-        {/* {!!params.documentId ? (
+        {!!params.documentId ? (
           <Navbar
             isCollapsed={isCollapsed}
             onResetWidth={resetWidth}
@@ -213,7 +213,7 @@ export const Navigation = () => {
           <nav className="bg-transparent px-3 py-2 w-full">
             {isCollapsed && <MenuIcon onClick={resetWidth} role="button" className="h-6 w-6 text-muted-foreground" />}
           </nav>
-        )} */}
+        )}
         <nav className="bg-transparent px-3 py-2 w-full">
           {isCollapsed && <MenuIcon 
             onClick={resetWidth} 
