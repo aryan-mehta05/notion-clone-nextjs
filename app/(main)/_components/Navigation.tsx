@@ -17,11 +17,11 @@ import { toast } from "sonner";
 
 import { cn } from "@/lib/utils";
 import { api } from "@/convex/_generated/api";
-// import {
-//   Popover,
-//   PopoverTrigger,
-//   PopoverContent,
-// } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
 // import { useSearch } from "@/hooks/use-search";
 // import { useSettings } from "@/hooks/use-settings";
 
@@ -178,7 +178,7 @@ export const Navigation = () => {
             icon={Plus}
             label="Add a page"
           />
-          {/* <Popover>
+          <Popover>
             <PopoverTrigger className="w-full mt-4">
               <Item label="Trash" icon={Trash} />
             </PopoverTrigger>
@@ -186,9 +186,10 @@ export const Navigation = () => {
               className="p-0 w-72"
               side={isMobile ? "bottom" : "right"}
             >
-              <TrashBox />
+              <p>Trash Box</p>
+              {/* <TrashBox /> */}
             </PopoverContent>
-          </Popover> */}
+          </Popover>
         </div>
         <div
           onMouseDown={handleMouseDown}
