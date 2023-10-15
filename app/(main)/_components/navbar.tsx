@@ -10,6 +10,7 @@ import { Id } from "@/convex/_generated/dataModel";
 import { Menu } from "./menu";
 import { Title } from "./title";
 import { Banner } from "./banner";
+import { Publish } from "./publish";
 
 interface NavbarProps {
   isCollapsed: boolean;
