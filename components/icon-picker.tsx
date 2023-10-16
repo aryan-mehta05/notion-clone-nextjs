@@ -6,7 +6,7 @@ import EmojiPicker, { Theme } from "emoji-picker-react";
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger,
+  PopoverTrigger
 } from "@/components/ui/popover";
 
 interface IconPickerProps {
@@ -21,7 +21,7 @@ export const IconPicker = ({
   asChild
 }: IconPickerProps) => {
   const { resolvedTheme } = useTheme();
-  const currentTheme = (resolvedTheme || "light") as keyof typeof themeMap;
+  const currentTheme = (resolvedTheme || "light") as keyof typeof themeMap
 
   const themeMap = {
     "dark": Theme.DARK,
