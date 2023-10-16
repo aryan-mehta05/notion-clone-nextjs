@@ -128,7 +128,7 @@ export const Item = ({
         </div>
       ): (
         <Icon 
-          className="shirnk-0 h-[18px] mr-2 text-muted-foreground"
+          className="shirnk-0 h-[18px] w-[18px] mr-2 text-muted-foreground"
         />
       )}
       <span className="truncate">
